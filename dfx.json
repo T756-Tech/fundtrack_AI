@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "fundtrack_backend": {
+      "main": "src/fundtrack_backend/main.mo",
+      "type": "motoko"
+    },
+    "fundtrack_frontend": {
+      "dependencies": [
+        "fundtrack_backend"
+      ],
+      "source": [
+        "src/fundtrack_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
